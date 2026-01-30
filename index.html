@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Idoma Translation Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Idoma Translation Page</h1>
+    <div class="banner">Idoma A'niya oooo!!!</div>
+    <p>Translate between English and Idoma language seamlessly</p>
+  </header>
+
+  <main class="container">
+
+    <div class="lang-switch">
+      <button class="active">English</button>
+      <span>⇄</span>
+      <button disabled>Idoma</button>
+    </div>
+
+    <section class="translator">
+      <div class="box">
+        <label>English</label>
+        <textarea id="englishInput" placeholder="Type in English..."></textarea>
+      </div>
+
+      <div class="box">
+        <label>Idoma</label>
+        <textarea id="idomaOutput" placeholder="Idoma will appear here..." readonly></textarea>
+      </div>
+    </section>
+
+    <section class="phrases">
+      <h3>💬 Common Phrases</h3>
+
+      <div class="phrase" data-en="how are you doing">
+        <strong>How are you doing?</strong>
+        <span>abole</span>
+      </div>
+
+      <div class="phrase" data-en="thank you">
+        <strong>Thank you</strong>
+        <span>ainya</span>
+      </div>
+
+      <div class="phrase" data-en="good morning">
+        <strong>Good morning</strong>
+        <span>ngba ochi</span>
+      </div>
+
+      <div class="phrase" data-en="sorry">
+        <strong>Sorry</strong>
+        <span>ngba</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Preserving and celebrating the Idoma language & culture</p>
+    <div class="values">
+      <span>🌍 Connecting Communities</span>
+      <span>📘 Language Learning</span>
+      <span>💜 Cultural Heritage</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
