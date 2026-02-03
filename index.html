@@ -1,74 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Character encoding -->
   <meta charset="UTF-8">
-  <title>Idoma Translation Page</title>
+
+  <!-- Makes the site responsive on mobile devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Page title (shown on browser tab) -->
+  <title>Idoma Translation Page</title>
+
+  <!-- Link to external CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- ================= HEADER SECTION ================= -->
   <header>
+    <!-- Main title -->
     <h1>Idoma Translation Page</h1>
-    <div class="banner">Idoma A'niya oooo!!!</div>
-    <p>Translate between English and Idoma language seamlessly</p>
-  </header>
 
-  <main class="container">
-
-    <div class="lang-switch">
-      <button class="active">English</button>
-      <span>⇄</span>
-      <button disabled>Idoma</button>
+    <!-- Decorative banner with cultural message -->
+    <div class="banner">
+      Idoma A'niya oooo!!!
     </div>
 
+    <!-- Short description of the app -->
+    <p>Translate between English and Idoma language seamlessly</p>
+  </header>
+  <!-- =============== END HEADER ======================= -->
+
+
+  <!-- ================= MAIN CONTENT =================== -->
+  <main class="container">
+
+    <!-- Language switch buttons -->
+    <div class="lang-switch">
+      <!-- English button (default active) -->
+      <button id="enBtn" class="active">English</button>
+
+      <!-- Swap icon -->
+      <span>⇄</span>
+
+      <!-- Idoma button -->
+      <button id="idBtn">Idoma</button>
+    </div>
+
+    <!-- Translation input/output section -->
     <section class="translator">
+
+      <!-- English input box -->
       <div class="box">
-        <label>English</label>
-        <textarea id="englishInput" placeholder="Type in English..."></textarea>
+        <label for="englishInput">English</label>
+        <textarea 
+          id="englishInput" 
+          placeholder="Type in English...">
+        </textarea>
       </div>
 
+      <!-- Idoma output box -->
       <div class="box">
-        <label>Idoma</label>
-        <textarea id="idomaOutput" placeholder="Idoma will appear here..." readonly></textarea>
+        <label for="idomaOutput">Idoma</label>
+        <textarea 
+          id="idomaOutput" 
+          placeholder="Idoma will appear here..." 
+          readonly>
+        </textarea>
       </div>
+
     </section>
+    <!-- ============== END TRANSLATOR ================== -->
 
+
+    <!-- ================= COMMON PHRASES SECTION ======= -->
     <section class="phrases">
       <h3>💬 Common Phrases</h3>
 
+      <!-- Phrase item -->
       <div class="phrase" data-en="how are you doing">
         <strong>How are you doing?</strong>
         <span>abole</span>
       </div>
 
+      <!-- Phrase item -->
       <div class="phrase" data-en="thank you">
         <strong>Thank you</strong>
         <span>ainya</span>
       </div>
 
+      <!-- Phrase item -->
       <div class="phrase" data-en="good morning">
         <strong>Good morning</strong>
         <span>ngba ochi</span>
       </div>
 
+      <!-- Phrase item -->
       <div class="phrase" data-en="sorry">
         <strong>Sorry</strong>
         <span>ngba</span>
       </div>
     </section>
+    <!-- =============== END PHRASES ==================== -->
 
   </main>
+  <!-- ================= END MAIN ====================== -->
 
+
+  <!-- ================= FOOTER ======================== -->
   <footer>
     <p>Preserving and celebrating the Idoma language & culture</p>
+
+    <!-- Core values / impact areas -->
     <div class="values">
       <span>🌍 Connecting Communities</span>
       <span>📘 Language Learning</span>
       <span>💜 Cultural Heritage</span>
     </div>
   </footer>
+  <!-- ================= END FOOTER ==================== -->
 
+
+  <!-- Link to external JavaScript file -->
   <script src="script.js"></script>
+
 </body>
 </html>
